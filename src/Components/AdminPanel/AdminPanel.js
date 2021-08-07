@@ -10,12 +10,12 @@ const AdminPanel = () => {
   const [eventList, setEventList] = useState([])
   const { register, handleSubmit, formState: { errors } } = useForm();
   useEffect(()=>{
-    fetch("http://localhost:7000/event")
+    fetch("https://mayaful.herokuapp.com/event")
     .then((res)=> res.json())
     .then((res)=> setEventList(res))
   },[])
   const onSubmit = data => {
-    fetch("http://localhost:7000/event/",{
+    fetch("https://mayaful.herokuapp.com/event/",{
       method: 'POST',
       headers: { 'content-type': 'application/json'},
       body: JSON.stringify(data)
@@ -29,7 +29,7 @@ const AdminPanel = () => {
     })
   }
   const deleteEvent = (id) => {
-    fetch(`http://localhost:7000/event/${id}`,{
+    fetch(`https://mayaful.herokuapp.com/event/${id}`,{
           method: 'DELETE',
           headers: {'Content-Type': 'application/json'}
       })

@@ -5,12 +5,12 @@ import 'react-toastify/dist/ReactToastify.css';
 const DonarReport = () => {
     const [reportList, setReportList] = useState([]);
     useEffect(()=>{
-        fetch("http://localhost:7000/report")
+        fetch("https://mayaful.herokuapp.com/report")
         .then((res)=> res.json())
         .then((res)=> setReportList(res))
     },[])
     const deleteReport =(id) => {
-      fetch(`http://localhost:7000/report/${id}`,{
+      fetch(`https://mayaful.herokuapp.com/report/${id}`,{
           method: 'DELETE',
           headers: {'Content-Type': 'application/json'}
       })
@@ -23,11 +23,11 @@ const DonarReport = () => {
       })
     }
     const deleteDonar = (donarId, reportId) => {
-      fetch(`http://localhost:7000/report/${reportId}`,{
+      fetch(`https://mayaful.herokuapp.com/report/${reportId}`,{
           method: 'DELETE',
           headers: {'Content-Type': 'application/json'}
       })
-      fetch(`http://localhost:7000/blood/${donarId}`,{
+      fetch(`https://mayaful.herokuapp.com/blood/${donarId}`,{
           method: 'DELETE',
           headers: {'Content-Type': 'application/json'}
       })

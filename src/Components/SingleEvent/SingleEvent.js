@@ -8,14 +8,14 @@ const SingleEvent = () => {
     const {id} = useParams();
     const { register, handleSubmit, formState: { errors } } = useForm();
     useEffect(()=>{
-        fetch(`http://localhost:7000/event/${id}`)
+        fetch(`https://mayaful.herokuapp.com/event/${id}`)
         .then((res)=> res.json())
         .then((res)=> setEvent(res[0]))
     // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
     const onSubmit = (data) => {
         data.eventId = id;
-        fetch("http://localhost:7000/volunteer/",{
+        fetch("https://mayaful.herokuapp.com/volunteer/",{
             method: 'POST',
             headers: { 'content-type': 'application/json'},
             body: JSON.stringify(data)

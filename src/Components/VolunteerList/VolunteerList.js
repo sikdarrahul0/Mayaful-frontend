@@ -6,7 +6,7 @@ const VolunteerList = () => {
     const [volunteerList, setVolunteerList] = useState([]);
     const {id} = useParams();
     useEffect(()=>{
-        fetch(`http://localhost:7000/volunteer/${id}`)
+        fetch(`https://mayaful.herokuapp.com/volunteer/${id}`)
         .then((res)=> res.json())
         .then((res)=> setVolunteerList(res))
     // eslint-disable-next-line react-hooks/exhaustive-deps

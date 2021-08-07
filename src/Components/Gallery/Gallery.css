@@ -1,6 +1,11 @@
+.gallery {
+  text-align: center;
+  margin: 10px 5px;
+  padding: 10px;
+}
 .gallery-img {
-  height: 250px;
-  width: 350px;
+  height: 240px;
+  width: 320px;
 }
 .smile-img {
   height: 330px;

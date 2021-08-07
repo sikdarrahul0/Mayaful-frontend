@@ -5,6 +5,7 @@ import image11 from '../../images/Gallery/image11.jpg';
 import image12 from '../../images/Gallery/image12.jpg';
 import image13 from '../../images/Gallery/image13.jpg';
 import image14 from '../../images/Gallery/image14.jpg';
+import image15 from '../../images/Gallery/image15.jpg';
 import image2 from '../../images/Gallery/image2.jpg';
 import image3 from '../../images/Gallery/image3.jpg';
 import image4 from '../../images/Gallery/image4.jpg';
@@ -23,7 +24,7 @@ import './Gallery.css';
 
 
 const Gallery = () => {
-    const imageList = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14];
+    const imageList = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14, image15];
     const smileList = [smile1, smile2, smile3, smile4, smile5, smile6];
     return (
         <section className="container my-5">
@@ -31,19 +32,23 @@ const Gallery = () => {
             <div className="row d-flex justify-content-center">
                 {
                     imageList.map(img =>(
-                     <div className="col-lg-4 p-2">
-                        <img className="gallery-img" src={img} alt="gallery-img" />
+                     <div className="col-md-6 col-xl-4">
+                        <div className="gallery">
+                          <img className="gallery-img" src={img} alt="gallery-img" />
+                        </div>
                      </div>
                     ))
                 }
                 
             </div>
-            <h3 className="bolder text-danger text-center mt-5 mb-2">কিছু প্রাণবন্ত ছবি</h3>
+            <h3 className="bolder text-danger text-center mt-5 mb-3">কিছু প্রাণবন্ত ছবি</h3>
             <div className="row d-flex justify-content-center">
                 {
                     smileList.map(img =>(
-                     <div className="col-lg-4 p-2">
-                        <img className="smile-img" src={img} alt="gallery-img" />
+                     <div className="col-md-6 col-xl-4">
+                        <div className="gallery">
+                          <img className="smile-img" src={img} alt="gallery-img" />
+                        </div>
                      </div>
                     ))
                 }

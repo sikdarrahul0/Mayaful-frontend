@@ -5,7 +5,7 @@ import './UpcommingEvent.css';
 const UpcommingEvent = () => {
     const [eventList, setEventList] = useState([]);
     useEffect(()=>{
-        fetch("http://localhost:7000/event")
+        fetch("https://mayaful.herokuapp.com/event")
         .then((res)=> res.json())
         .then((res)=> setEventList(res))
     },[])

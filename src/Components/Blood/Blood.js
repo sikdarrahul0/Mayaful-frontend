@@ -14,7 +14,7 @@ const Blood = () => {
     const [group, setGroup] = useState(undefined);
 
 useEffect(()=>{
-    fetch("http://localhost:7000/blood/undefined/undefined")
+    fetch("https://mayaful.herokuapp.com/blood/undefined/undefined")
     .then((res)=> res.json())
     .then((res)=> setBloodList(res))
 },[])
@@ -25,7 +25,7 @@ useEffect(()=>{
   } 
   const handleSearch = (e) =>{
       e.preventDefault();
-    fetch(`http://localhost:7000/blood/${division}/${group}`)
+    fetch(`https://mayaful.herokuapp.com/blood/${division}/${group}`)
     .then((res)=> res.json())
     .then((res)=> setBloodList(res))
   }
@@ -34,7 +34,7 @@ useEffect(()=>{
       newReport.donarId = reportDonar._id;
       delete newReport._id;
       newReport.report = report;
-      fetch("http://localhost:7000/report/",{
+      fetch("https://mayaful.herokuapp.com/report/",{
       method: 'POST',
       headers: { 'content-type': 'application/json'},
       body: JSON.stringify(newReport)

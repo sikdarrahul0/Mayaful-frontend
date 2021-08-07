@@ -25,7 +25,7 @@ const Login = () => {
             username,
             password,
         }
-        fetch(`http://localhost:7000/admin/login`, {
+        fetch(`https://mayaful.herokuapp.com/admin/login`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(loginData),

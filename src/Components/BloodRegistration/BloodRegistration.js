@@ -7,7 +7,7 @@ import './BloodRegistration.css';
 const BloodRegistration = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const onSubmit = data => {
-    fetch("http://localhost:7000/blood/",{
+    fetch("https://mayaful.herokuapp.com/blood/",{
       method: 'POST',
       headers: { 'content-type': 'application/json'},
       body: JSON.stringify(data)
