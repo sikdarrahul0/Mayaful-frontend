@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useParams } from 'react-router-dom';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './SingleEvent.css';
 
 const SingleEvent = () => {
@@ -22,11 +24,15 @@ const SingleEvent = () => {
           })
           .then((res)=> res.json())
           .then((res)=> {
-            alert(res.message);
+            toast.success(res.message,{
+                autoClose: 2500,
+            }
+            )
           })
     }
     return (
         <section className="container my-4">
+            <ToastContainer />
             <h3 className="text-center bolder my-3">কর্মসূচির বিস্তারিত</h3>
             <div className="row">
                 <div className="col-12 p-3 single-event">
