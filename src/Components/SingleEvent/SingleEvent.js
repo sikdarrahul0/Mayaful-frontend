@@ -33,7 +33,7 @@ const SingleEvent = () => {
     return (
         <section className="container my-4">
             <ToastContainer />
-            <h3 className="text-center bolder my-3">কর্মসূচির বিস্তারিত</h3>
+            <h3 className="text-center text-danger bolder my-3">কর্মসূচির বিস্তারিত</h3>
             <div className="row">
                 <div className="col-12 p-3 single-event">
                     <h6 className="bolder d-inline me-2">কর্মসূচির নাম:</h6>
@@ -46,7 +46,7 @@ const SingleEvent = () => {
                     <p className="d-inline">আমাদের এই কার্যক্রম সফলভাবে সম্পন্ন করতে {event.volunteer} জন স্বেচ্ছাসেবক  প্রয়োজন। আপনি যদি আমাদের এ কার্যক্রমে  অংশগ্রহণ করতে আগ্রহী হন তাহলে নিচের স্বেচ্ছাসেবক ফর্মটি পূরণ করুন। আমরা মায়াফুল টিম আপনার সাথে যোগাযোগ করব, ধন্যবাদ।</p>
                 </div>
             </div>
-            <h3 className="text-center bolder mb-3 mt-5">Volunteer Registration Form</h3>
+            <h3 className="text-center text-danger bolder mb-3 mt-5">Volunteer Registration Form</h3>
             <div className="row d-flex justify-content-center">
                 <div className="col-lg-6">
                     <div className="volunteer-form">
