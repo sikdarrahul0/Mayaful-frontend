@@ -15,7 +15,7 @@ const CarouselShow = () => {
 
   return (
     <div className="container mb-3">
-      <Carousel variant="dark" activeIndex={index} onSelect={handleSelect}>
+      <Carousel indicators={false} variant="dark" activeIndex={index} onSelect={handleSelect}>
         <Carousel.Item>
           <img
             className="d-block carousel-img"

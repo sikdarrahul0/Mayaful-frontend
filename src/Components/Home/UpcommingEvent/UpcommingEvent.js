@@ -13,7 +13,8 @@ const UpcommingEvent = () => {
         <section className="container my-5">
             <h2 className="bolder text-center text-danger">আমাদের আগামী কর্মসূচিসমূহ</h2>
             <div className="row my-3 d-flex justify-content-center">
-               {
+               {   
+                   eventList.length ?
                    eventList.map(event=>(
                     <div className="col-lg-4">
                     <div className="event-design">
@@ -22,7 +23,8 @@ const UpcommingEvent = () => {
                             <NavLink to={`/single/event/${event._id}`}><button className="reg-btn">আরো জানুন</button></NavLink> 
                         </div>
                     </div>
-                   ))
+                   )):
+                   <h5 className="text-center text-dark">আমাদের পরবর্তী কর্মসূচির জন্য  অপেক্ষা করুন</h5>
                }                
             </div>
         </section>
