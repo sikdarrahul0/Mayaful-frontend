@@ -1,0 +1,37 @@
+.event-design {
+  color: #fff;
+  background-color: rgb(238, 62, 62);
+  text-align: center;
+  margin: 10px 5px;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+.event-design:hover {
+  background-color: #469776;
+}
+.event-design h5 {
+  font-weight: bold;
+}
+.event-design h6 {
+  font-weight: bold;
+}
+.reg-btn {
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  padding: 6px;
+  margin-bottom: 10px;
+}
+.reg-btn:hover {
+  background-color: rgb(238, 62, 62);
+}
+.event-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 10px 10px;
+}

@@ -1,0 +1,39 @@
+.footer {
+  padding: 50px 0 20px 0;
+  background-color: rgba(0, 0, 0, 0.856);
+  color: rgba(255, 255, 255, 0.808);
+}
+.footer img {
+  width: 180px;
+  height: 60px;
+  margin: 20px 0;
+}
+.footer-div p {
+  margin: 8px 0;
+  transition: all 0.5s ease;
+}
+.footer-div p:hover {
+  margin-left: 5px;
+  cursor: pointer;
+  color: rgb(241, 66, 66);
+}
+.icon {
+  margin: 20px 10px;
+  color: rgba(255, 255, 255, 0.808);
+  font-size: 27px;
+  transition: all 0.3s ease;
+}
+.icon:hover {
+  color: rgb(241, 66, 66);
+  cursor: pointer;
+}
+.credit-tag {
+  margin: 10px auto 5px auto;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  color: #fff;
+}
+.credit-tag:hover {
+  text-decoration: none;
+  color: rgb(241, 66, 66);
+}

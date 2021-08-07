@@ -1,0 +1,45 @@
+.donar-form {
+  padding: 20px;
+  border: 2px solid rgb(243, 77, 77);
+  border-radius: 10px;
+}
+.donar-form input {
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.donar-form input:focus {
+  outline-color: rgb(243, 77, 77);
+}
+.donar-form input::-webkit-input-placeholder {
+  text-align: center;
+}
+.donar-form select {
+  box-sizing: border-box;
+  width: 100%;
+  text-align-last: center;
+  height: 37px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  margin-bottom: 8px;
+}
+.donar-form select:focus {
+  outline-color: rgb(243, 77, 77);
+}
+.donar-form select:hover {
+  cursor: pointer;
+}
+.donar-reg-btn {
+  box-sizing: border-box;
+  width: 90%;
+  margin: 10px 10px;
+  background-color: rgb(243, 77, 77);
+  padding: 7px;
+  color: white;
+}
+.donar-reg-btn:hover {
+  background-color: rgb(167, 54, 54);
+}

@@ -1,0 +1,61 @@
+.single-event {
+  border: 2px solid rgb(238, 63, 63);
+  border-radius: 10px;
+}
+.volunteer-form {
+  margin-bottom: 40px;
+  padding: 20px;
+  border: 2px solid rgb(243, 77, 77);
+  border-radius: 10px;
+}
+.volunteer-form input {
+  border: none;
+  padding: 5px;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.volunteer-form input:focus {
+  outline-color: rgb(243, 77, 77);
+}
+.volunteer-form input::-webkit-input-placeholder {
+  text-align: center;
+}
+.volunteer-form select {
+  box-sizing: border-box;
+  width: 100%;
+  text-align-last: center;
+  height: 37px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  margin-bottom: 8px;
+}
+.volunteer-form select:focus {
+  outline-color: rgb(243, 77, 77);
+}
+.volunteer-form select:hover {
+  cursor: pointer;
+}
+.volunteer-form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  padding: 10px;
+}
+
+.volunteer-form textarea:focus {
+  outline-color: rgb(243, 77, 77);
+}
+.volunteer-reg-btn {
+  width: 180px !important;
+  margin: 10px 5px;
+  background-color: rgb(243, 77, 77);
+  padding: 7px;
+  color: white;
+}
+.volunteer-reg-btn:hover {
+  background-color: rgb(167, 54, 54);
+}

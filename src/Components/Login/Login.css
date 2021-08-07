@@ -1,0 +1,18 @@
+.login-panel {
+  width: 400px;
+  border: 2px solid rgb(238, 63, 63);
+  border-radius: 10px;
+  padding: 20px 15px;
+}
+.login-btn {
+  width: 170px !important;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 5px;
+  background-color: rgb(243, 77, 77);
+  padding: 7px;
+  color: white;
+}
+.login-btn:hover {
+  background-color: rgb(167, 54, 54);
+}

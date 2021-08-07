@@ -1,0 +1,12 @@
+.logo {
+  height: 50px;
+  width: 170px;
+}
+.nav-link {
+  margin: 10px 10px;
+  color: rgb(255, 57, 57) !important;
+}
+.nav-link:focus {
+  font-size: bolder !important;
+  color: rgb(22, 201, 31) !important;
+}

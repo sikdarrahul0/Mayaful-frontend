@@ -1,0 +1,72 @@
+.blood {
+  background-color: rgb(240, 75, 75);
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.blood-table {
+  overflow-x: auto;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 15px;
+}
+th {
+  background-color: rgb(240, 75, 75);
+  color: rgb(255, 255, 255);
+}
+tr {
+  transition: all 0.4s ease;
+}
+tr:nth-child(even) {
+  background-color: rgb(197, 188, 188);
+}
+tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+tr:hover {
+  cursor: pointer;
+  color: rgb(247, 241, 241);
+  background-color: rgb(240, 75, 75);
+}
+.report {
+  background-color: rgb(240, 75, 75);
+  padding: 50px;
+}
+.report textarea {
+  padding: 10px;
+  border: none;
+  transition: all 0.5s ease;
+}
+.report textarea:focus {
+  outline: none;
+  border: 4px solid rgba(44, 235, 187, 0.452);
+}
+.select-design {
+  margin-right: 5px;
+  border: none;
+  background-color: #ffffff;
+  margin-bottom: 15px;
+}
+.select-design:focus {
+  outline: none;
+  border: 2px solid rgb(240, 75, 75);
+}
+.blood-search {
+  background-color: rgb(240, 75, 75);
+  height: 27px;
+  padding: 0 15px;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+}
+.blood-search:hover {
+  background-color: rgb(199, 64, 64);
+}
