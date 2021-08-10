@@ -1,22 +1,22 @@
-.donar-form {
+.donor-form {
   padding: 20px;
   border: 2px solid rgb(243, 77, 77);
   border-radius: 10px;
 }
-.donar-form input {
+.donor-form input {
   border: none;
   padding: 5px;
   border-radius: 5px;
   margin-bottom: 8px;
   text-align: center;
 }
-.donar-form input:focus {
+.donor-form input:focus {
   outline-color: rgb(243, 77, 77);
 }
-.donar-form input::-webkit-input-placeholder {
+.donor-form input::-webkit-input-placeholder {
   text-align: center;
 }
-.donar-form select {
+.donor-form select {
   box-sizing: border-box;
   width: 100%;
   text-align-last: center;
@@ -26,13 +26,13 @@
   background-color: white;
   margin-bottom: 8px;
 }
-.donar-form select:focus {
+.donor-form select:focus {
   outline-color: rgb(243, 77, 77);
 }
-.donar-form select:hover {
+.donor-form select:hover {
   cursor: pointer;
 }
-.donar-reg-btn {
+.donor-reg-btn {
   box-sizing: border-box;
   width: 90%;
   margin: 10px 10px;
@@ -40,6 +40,6 @@
   padding: 7px;
   color: white;
 }
-.donar-reg-btn:hover {
+.donor-reg-btn:hover {
   background-color: rgb(167, 54, 54);
 }

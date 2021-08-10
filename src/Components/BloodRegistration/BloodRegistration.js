@@ -23,9 +23,9 @@ const BloodRegistration = () => {
   return (
     <section className="container my-5">
        <ToastContainer />
-        <h2 className="text-danger text-center my-3">Donar Registration Form</h2>
+        <h2 className="text-danger text-center my-3">Donor Registration Form</h2>
         <div className="d-flex justify-content-center">
-          <div className="donar-form">
+          <div className="donor-form">
           <form onSubmit={handleSubmit(onSubmit)}>
             <label htmlFor="name">Name:</label><br />
               <input id="name" placeholder="Full Name" {...register("name", { required: true })} /><br />
@@ -55,7 +55,7 @@ const BloodRegistration = () => {
                   <option value="AB+">AB+</option>
                   <option value="AB-">AB-</option>
                 </select> <br />
-            <input type="submit" className="donar-reg-btn"/>
+            <input type="submit" className="donor-reg-btn"/>
         </form>
         </div>
         </div>

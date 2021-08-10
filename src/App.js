@@ -36,7 +36,7 @@ function App() {
         <Route path="/gallery">
           <Gallery />
         </Route>
-        <Route path="/donar/registration">
+        <Route path="/donor/registration">
           <BloodRegistration />
         </Route>
         <Route path="/single/event/:id">

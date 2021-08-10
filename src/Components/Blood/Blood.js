@@ -7,7 +7,7 @@ import './Blood.css';
 
 const Blood = () => {
     const [show, setShow] = useState(false);
-    const [reportDonar, setReportDonar] = useState({});
+    const [reportDonor, setReportDonor] = useState({});
     const [bloodList, setBloodList] = useState([]);
     const [report, setReport] = useState();
     const [division, setDivision] = useState(undefined);
@@ -19,9 +19,9 @@ useEffect(()=>{
     .then((res)=> setBloodList(res))
 },[])
   const handleClose = () => setShow(false);
-  const handleShow = (donar) =>{
+  const handleShow = (donor) =>{
     setShow(true);
-    setReportDonar(donar);
+    setReportDonor(donor);
   } 
   const handleSearch = (e) =>{
       e.preventDefault();
@@ -30,8 +30,8 @@ useEffect(()=>{
     .then((res)=> setBloodList(res))
   }
   const handleSubmit = () => {
-      const newReport = {...reportDonar};
-      newReport.donarId = reportDonar._id;
+      const newReport = {...reportDonor};
+      newReport.donarId = reportDonor._id;
       delete newReport._id;
       newReport.report = report;
       fetch("https://mayaful.herokuapp.com/report/",{
@@ -56,7 +56,10 @@ useEffect(()=>{
             <h2 className="bolder text-center text-danger mb-3">ব্লাড ব্যাংক</h2>
             <p className="bolder text-center text-danger mb-1">আপনি যদি ব্লাড ডোনার  হয়ে থাকেন  তাহলে রেজিস্ট্রেশন করুন</p>
             <div className="text-center">
-            <NavLink to="/donar/registration/"><button className="btn btn-danger m-0"> Registration</button></NavLink>
+            <NavLink to="/donor/registration/"><button className="btn btn-danger m-0"> Registration</button></NavLink>
+            </div>
+            <div style={{width: '80%', marginLeft: 'auto', marginRight: 'auto'}}>
+            <p className="my-3 text-danger"><span className="bolder">বিশেষ দ্রষ্টব্য:</span>  নিচের ব্লাড ডোনারের লিস্টে যদি কোন ডোনারের তথ্য ভুল মনে হয়, তাহলে সেই ডোনারের নামে ক্লিক করে রিপোর্ট করুন। এডমিন সেটি যাচাই করে ডোনার কে লিস্ট হতে বাতিল করবেন।</p>
             </div>
             <div className="text-center my-3">
                 <form onSubmit={handleSearch}>
@@ -108,7 +111,7 @@ useEffect(()=>{
                         )):
                         <tr>
                             <td></td>
-                            <td style={{ textAlign: 'center'}}>No donar available</td>
+                            <td style={{ textAlign: 'center'}}>No donor available</td>
                             <td></td>
                             <td></td>
                         </tr>

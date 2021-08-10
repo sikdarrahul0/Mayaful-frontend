@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './AdminPanel.css';
-import DonarReport from './DonarReport/DonarReport';
+import DonorReport from './DonorReport/DonorReport';
 
 const AdminPanel = () => {
   const [eventList, setEventList] = useState([])
@@ -77,7 +77,7 @@ const AdminPanel = () => {
           }
           </div>
         </div>
-        <DonarReport />        
+        <DonorReport />        
     </section>
   );
 };
