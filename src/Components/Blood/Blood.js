@@ -3,10 +3,12 @@ import { Button, Modal } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import loading from '../../images/loading.gif';
 import './Blood.css';
 
 const Blood = () => {
     const [show, setShow] = useState(false);
+    const [isHitApi, setIsHitApi] = useState(false);
     const [reportDonor, setReportDonor] = useState({});
     const [bloodList, setBloodList] = useState([]);
     const [report, setReport] = useState();
@@ -16,7 +18,10 @@ const Blood = () => {
 useEffect(()=>{
     fetch("https://mayaful.herokuapp.com/blood/undefined/undefined")
     .then((res)=> res.json())
-    .then((res)=> setBloodList(res))
+    .then((res)=> {
+        setIsHitApi(true)
+        setBloodList(res)
+    })
 },[])
   const handleClose = () => setShow(false);
   const handleShow = (donor) =>{
@@ -92,6 +97,9 @@ useEffect(()=>{
             </div>
             <div className="blood">
             <div className="blood-table">
+                {
+                isHitApi ?
+                <>
                 <table>
                     <tr>
                     <th>Name</th>
@@ -99,7 +107,7 @@ useEffect(()=>{
                     <th>Division</th>
                     <th>Blood Group</th>
                     </tr>
-                    {
+                    {  
                         bloodList.length?
                         bloodList.map(blood => (
                         <tr onClick={()=> handleShow(blood)}>
@@ -117,6 +125,10 @@ useEffect(()=>{
                         </tr>
                     }
                 </table>
+                </>:
+                <img className="d-block mx-auto w-50 h-50" src={loading} alt="loading" />
+                    
+                }
             </div>
             </div>
             <Modal
