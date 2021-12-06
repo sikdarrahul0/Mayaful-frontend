@@ -9,7 +9,7 @@ https://github.com/sikdarrahul0/Mayaful-backend
 ## Mayaful
     
 	  ★ A full stack charitable community web application.
-		★ Admin can add new upcoming events.
+ ★ Admin can add new upcoming events.
     ★ Users who are interested to join mayaful events can register here.
     ★ Initially users can find blood donors here.
     ★ Users can register as a donor.
